@@ -1,9 +1,0 @@
-[Unit]
-Description=Enable Wifi
-After=local-fs.target
-Conflicts=rescue.target actdead.target factory-test.target
-
-[Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=/usr/bin/droid/enable-wifi.sh
