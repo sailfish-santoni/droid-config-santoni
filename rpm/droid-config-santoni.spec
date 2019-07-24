@@ -18,6 +18,7 @@
 %define pixel_ratio 1.2
 
 Provides: ofono-configs
+Obsoletes: ofono-configs-mer
 
 %include droid-configs-device/droid-configs.inc
 
