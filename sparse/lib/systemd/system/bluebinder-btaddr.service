@@ -1,0 +1,7 @@
+[Unit]
+Description=Alternative way to get BT addr for Bluebinder.
+After=droid-hal-init.service
+Before=bluebinder.service
+
+[Service]
+ExecStart=/usr/bin/droid/bluetooth_mac.sh
