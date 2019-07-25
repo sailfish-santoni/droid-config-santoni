@@ -37,6 +37,7 @@ Requires:
 - qt5-plugin-generic-evdev
 
 - pulseaudio-modules-droid
+- pulseaudio-modules-droid-glue
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -53,6 +54,9 @@ Requires:
 - nemo-gstreamer1.0-interfaces
 # For devices with droidmedia and gst-droid built, see HADK pdf for more information
 - gstreamer1.0-droid
+
+# either LD_PRELOAD libcameraservice is required or this (for camera):
+- audioflingerglue
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -81,8 +85,15 @@ Requires:
 - geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-#- qt5-qtmultimedia-plugin-mediaservice-irisradio
-#- jolla-mediaplayer-radio
+- qt5-qtmultimedia-plugin-mediaservice-irisradio
+- jolla-mediaplayer-radio
+
+# For flashlight
+- jolla-settings-system-flashlight
+
+# For MicroSD access.
+- sd-utils
+
 
 Summary: Jolla HW Adaptation santoni
 
